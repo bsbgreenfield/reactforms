@@ -1,0 +1,10 @@
+.Box{
+    position: relative;
+    margin: 50px;
+}
+.deleteButton{
+    position: absolute;
+    cursor: pointer;
+    border: 2px solid red;
+    width: min-content;
+}
