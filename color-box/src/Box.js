@@ -7,10 +7,11 @@ function Box({ bg_color, width, height, id, removeBox }) {
     }
     return (
         <div 
+            data-testid = 'box'
             id = {id}
             className="Box"
             style={{ width: `${width}px`, height: `${height}px`, backgroundColor: bg_color }}>
-            <div onClick={removeSelf} className="deleteButton">X</div>
+            <div data-testid = "deleter" onClick={removeSelf} className="deleteButton">X</div>
         </div>
     )
 }

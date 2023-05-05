@@ -25,7 +25,7 @@ function BoxForm({updateBoxes, allBoxes}) {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="width">Width ({formData.width}): </label>
+            <label htmlFor="width">Width</label>
             <input
                 type="range"
                 name="width"
@@ -35,7 +35,7 @@ function BoxForm({updateBoxes, allBoxes}) {
                 >
               
             </input>
-            <label htmlFor="height">Height({formData.height}) : </label>
+            <label htmlFor="height">Height</label>
             <input
                 type="range"
                 name="height"
@@ -44,7 +44,7 @@ function BoxForm({updateBoxes, allBoxes}) {
                 value={formData["height"]}>
 
             </input>
-            <label htmlFor="color">Color ({formData.color}): </label>
+            <label htmlFor="color">Color</label>
             <input
                 type="color"
                 name="color"
